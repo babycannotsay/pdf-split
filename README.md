@@ -1,6 +1,6 @@
 # pdf-split
 
-split pdf by page and rename by pdf file's value
+Divide pdfs with the same structure on each page into multiple pdfs named with specific keywords
 
 ---
 
