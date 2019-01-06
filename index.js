@@ -3,7 +3,9 @@ const fs = require("fs");
 const Reader = require("./reader");
 const paginate = require("./paginate.js");
 
-fs.readFile(path.join(__dirname, "/test.pdf"), (err, buffer) => {
+fs.readFile(path.join(__dirname, "/test.pdf"), async (err, buffer) => {
+  const index = await new Reader().getIndex(buffer, "唐**");
+
   new Reader().parseBuffer(
     buffer,
     (err, item) => {
@@ -14,6 +16,6 @@ fs.readFile(path.join(__dirname, "/test.pdf"), (err, buffer) => {
         });
       }
     },
-    10 /*position in pdf */
+    index /*position in pdf */
   );
 });
