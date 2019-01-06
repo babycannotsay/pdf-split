@@ -4,7 +4,12 @@ split pdf by page and rename by pdf file's value
 
 ---
 
-split test.pdf to others
+## demo
+
+1. git clone git@github.com:babycannotsay/pdf-split.git
+2. cd pdf-split
+3. delete `唐**.pdf` and `舒**.pdf`
+4. node index
 
 ## quote
 
